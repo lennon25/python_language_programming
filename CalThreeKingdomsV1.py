@@ -14,5 +14,5 @@ for word in words:
 items = list(counts.items())
 items.sort(key=lambda x: x[1], reverse=True)
 for i in range(15):
-	word, count = itmes[i]
+	word, count = items[i]
 	print("{0:<10}{1:>5}".format(word,count))

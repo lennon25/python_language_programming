@@ -15,7 +15,7 @@ def feb(n):
 	if n == 1 or n == 2:
 		return 1
 	else:
-		return f(n - 1) + f(n - 2)
+		return feb(n - 1) + feb(n - 2)
 
 
 # 汉罗塔
@@ -29,4 +29,4 @@ def hanoi(n, src, dst, mid):
 		hanoi(n-1, src, mid, dst)
 		print("{}:{}->{}".format(n,src,dst))
 		count += 1
-	`	hanoi(n-1, mid, dst, src)
+	hanoi(n-1, mid, dst, src)
